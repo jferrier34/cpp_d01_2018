@@ -14,8 +14,8 @@
 
 void draw_square(uint32_t **img, const point_t *origin,
 size_t size, uint32_t color) {
-    for (size_t i = origin->x; i < size; i++) {
-        for (size_t j = origin->y; j < size; j++) {
+    for (size_t i = origin->y; i < size; i++) {
+        for (size_t j = origin->x; j < size; j++) {
             img[i][j] = color;
         }
     }
