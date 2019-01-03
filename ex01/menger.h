@@ -5,8 +5,8 @@
 ** menger.h
 */
 
-#ifndef MY_H
-#define MY_H
+#ifndef MENGER_H
+#define MENGER_H
 
 #include <unistd.h>
 #include <stdio.h>
