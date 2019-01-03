@@ -43,6 +43,6 @@ int follow_the_white_rabbit(void)
             printf("\n");
         }
     }
-    return (result);
+    return (sum);
     }
 
