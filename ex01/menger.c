@@ -17,26 +17,25 @@ void menger_sponge(int size, int lvl, int x, int y)
 void p(int nb)
 {
     if (nb < 10) {
-        printf("00%d ", nb);
+        printf("00%d", nb);
     }
     else if (nb < 100) {
-        printf("0%d ", nb);
+        printf("0%d", nb);
     }
     else
-        printf("%d ", nb);
+        printf("%d", nb);
 }
 
 void menger_sponge_display(int size, int lvl, int x, int y)
 {
     int first = size / 3;
-    int second = 0;
-    int third = 0;
+    int second = first + x;
+    int third = first + y;
         p(first);
-        printf("");
-        p(second = first + x);
-        printf("");
-        p(third = first + y);
-        printf("");
+        printf(" ");
+        p(second);
+        printf(" ");
+        p(third);
         printf("\n");
         if (lvl > 1) {
             for (int i = 0; i < 3; i++) {
