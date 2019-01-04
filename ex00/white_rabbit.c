@@ -18,12 +18,12 @@ int follow_the_white_rabbit(void)
 
     while (check == 0) {
         result = (random() % 37) + 1;
-        sum += result;
+        sum = sum + result;
         if (result == 1 || result == 37 || sum >= 397) {
             check = 1;
             printf("RABBIT!!!");
             printf("\n");
-            return (result);
+            return (sum);
         }
         if (result >= 18 && result <= 21 || result == 6 ||
         result == 17 || result == 28 || result == 4 || result == 5)     {
@@ -44,5 +44,5 @@ int follow_the_white_rabbit(void)
         }
     }
     return (sum);
-    }
+}
 
